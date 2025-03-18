@@ -2,15 +2,33 @@ baseURL = "https://brivon.fun/"
 defaultContentLanguage = "zh-cn"
 languageCode = "zh-CN"
 hasCJKLanguage = true
-title = "brivon.fun"
+title = "Brivon"
 theme = "LoveIt"
 
 [params]
   # LoveIt 主题版本
   version = "0.3.X"
-  title = "brivon.fun"
+  title = "Brivon"
   description = ".NET Core、Abp框架、领域驱动、设计模式及程序架构等知识分享"
   keywords = ["C#", ".NET", "Abp", ".NET Core", "架构", "领域驱动", "DDD", "整洁架构", "设计模式"]
+
+  [params.header]
+  # 桌面端导航栏模式 ["fixed", "normal", "auto"]
+  desktopMode = "fixed"
+  # 移动端导航栏模式 ["fixed", "normal", "auto"]
+  mobileMode = "auto"
+  # LoveIt 新增 | 0.2.0 页面头部导航栏标题配置
+    [params.header.title]
+    # LOGO 的 URL
+    logo = ""
+    # 标题名称
+    name = "Brivon"
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    post = ""
+    # LoveIt 新增 | 0.2.5 是否为标题显示打字机动画
+    typeit = false
 
   # 主页配置
   [params.home]
@@ -24,9 +42,9 @@ theme = "LoveIt"
       # 主页显示头像的 URL
       avatarURL = "/images/avatar.png"
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
-      title = "brivon.fun"
+      title = "Brivon"
       # 主页显示的网站副标题
-      subtitle = "水之积也不厚，则其负大舟也无力；风之积也不厚，则其负大翼也无力。"
+      subtitle = ""
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
@@ -42,21 +60,6 @@ theme = "LoveIt"
       # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
       defaultHiddenFromHomePage = false
 
-  [params.social]
-    GitHub = "realZhangChi"
-    Email = "zliming@outlook.com"
-    RSS = true
-
-  [params.analytics]
-    enable = true
-    # Google Analytics
-    [params.analytics.google]
-      id = "G-7XYGV0J1G6"
-      # 是否匿名化用户 IP
-      anonymizeIP = false
-    [params.analytics.baidu]
-      id = "260d395bb54739f609224ea4d367d1bf"
-
   [params.page]
     [params.page.toc]
       # 是否使用目录
@@ -71,29 +74,6 @@ theme = "LoveIt"
       copy = true
       # 默认展开显示的代码行数
       maxShownLines = 50
-    [params.page.comment]
-      enable = true
-      # Valine 评论系统设置
-      [params.page.comment.valine]
-        enable = true
-        appId = "SkpiiXJeuEA5vrub7Btk9lKd-gzGzoHsz"
-        appKey = "cP0gHgQ51CAYfWlron7uSq2B"
-        placeholder = ""
-        avatar = "monsterid"
-        meta= ['nick','mail','link']
-        pageSize = 10
-        lang = "zh-CN"
-        visitor = true
-        recordIP = true
-        highlight = true
-        enableQQ = true
-        #serverURLs = ""
-        # LoveIt 新增 | 0.2.6 emoji 数据文件名称, 默认是 "google.yml"
-        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # 位于 "themes/LoveIt/assets/data/emoji/" 目录
-        # 可以在你的项目下相同路径存放你自己的数据文件:
-        # "assets/data/emoji/"
-        emoji = "google.yml"
 
   [params.search]
     enable = true
@@ -175,12 +155,6 @@ theme = "LoveIt"
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
-
-# 作者配置
-[author]
-  name = "张驰"
-  email = "zliming@outlook.com"
-  link = "https://github.com/realZhangChi"
 
 # 用于 Hugo 输出文档的设置
 [outputs]

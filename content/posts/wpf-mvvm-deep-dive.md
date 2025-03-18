@@ -6,8 +6,6 @@ tags: ["WPF", "MVVM", ".NET", "桌面开发", "设计模式"]
 categories: ["桌面应用开发"]
 ---
 
-# WPF MVVM模式深度解析：原理与实践
-
 MVVM（Model-View-ViewModel）是WPF应用程序开发中最重要的设计模式之一。本文将深入探讨MVVM的核心概念、实现原理以及最佳实践，帮助您构建可维护、可测试的WPF应用程序。
 
 ## MVVM基础架构
