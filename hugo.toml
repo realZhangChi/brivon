@@ -7,7 +7,7 @@ theme = "LoveIt"
 
 [params]
   # LoveIt 主题版本
-  version = "0.2.X"
+  version = "0.3.X"
   title = "brivon.fun"
   description = ".NET Core、Abp框架、领域驱动、设计模式及程序架构等知识分享"
   keywords = ["C#", ".NET", "Abp", ".NET Core", "架构", "领域驱动", "DDD", "整洁架构", "设计模式"]
