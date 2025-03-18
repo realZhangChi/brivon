@@ -8,6 +8,7 @@ theme = "LoveIt"
 [params]
   # LoveIt 主题版本
   version = "0.2.X"
+  title = "brivon.fun"
   description = ".NET Core、Abp框架、领域驱动、设计模式及程序架构等知识分享"
   keywords = ["C#", ".NET", "Abp", ".NET Core", "架构", "领域驱动", "DDD", "整洁架构", "设计模式"]
 
@@ -161,22 +162,6 @@ theme = "LoveIt"
     url = "/categories/"
     title = ""
     weight = 3
-  [[menu.main]]
-    identifier = "friend"
-    pre = ""
-    post = ""
-    name = "朋友们"
-    url = "/friend/"
-    title = ""
-    weight = 5
-  [[menu.main]]
-    identifier = "about"
-    pre = ""
-    post = ""
-    name = "关于我"
-    url = "https://profile.zhangchi.io"
-    title = ""
-    weight = 6
 
 # Hugo 解析文档的配置
 [markup]
