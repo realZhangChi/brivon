@@ -8,4 +8,3 @@ npm-debug.log
 .vscode
 resources/_gen
 .hugo_build.lock
-public/
